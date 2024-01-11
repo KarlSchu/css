@@ -17,3 +17,14 @@ Alternativly you can use the web page setting
 
 ### Setup as https Page
 
+The web page must deliver the css file with the mime type `text/css`
+
+Hint:
+
+If sites return their content as plaintext, likely because they don't want to be used as a generic CDN for stylesheets and script, vscode do not accept it.
+
+`used to apply style from 'https://XXX' because its MIME type ('text/plain') is not a supported stylesheet MIME type, and strict MIME checking is enabled.`
+
+
+Source of info: [github.com/microsoft/vscode/issues/148677#issuecomment-1118027411](https://github.com/microsoft/vscode/issues/148677#issuecomment-1118027411)
+
